@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <!-- tính tiền lương -->
+    <div class="form-group container" >
+        <h3>Tính Tiền Lương</h3>
+          <div class="form-group">
+            <p>lương 1 ngày</p>
+            <input id="tienluong1ngay" class="form-control w-25">
+          </div>
+          <br>
+          <div class="form-group">
+            <p> số ngày làm</p>
+            <input id="songaylam" class="form-control w-25">
+          </div>
+          <br>
+          <button onclick="tinhtongluong()" id="btntintien" class="btn btn-danger" >Tính Tiền</button>
+          <div class="mt-2 alert alert-success">
+            kết quả : <span id="TổngLương"></span>
+          </div>
+      </div>
+      <hr style="background: red;">
+
+<!-- tính giá trị trung Bình -->
+      <div class="form-group container" >
+        <h3>Tính Giá Trị Trung Bình</h3>
+          <div class="form-group">
+            <p>số thực 1</p>
+            <input id="sothuc1" class="form-control w-25">
+          </div>
+          <br>
+          <div class="form-group">
+            <p> số thực 2</p>
+            <input id="sothuc2" class="form-control w-25">
+          </div>
+          <br>
+          <div class="form-group">
+            <p> số thực 3</p>
+            <input id="sothuc3" class="form-control w-25">
+          </div>
+          <br>
+          <div class="form-group">
+            <p> số thực 4</p>
+            <input id="sothuc4" class="form-control w-25">
+          </div>
+          <br>
+          <div class="form-group">
+            <p> số thực 5</p>
+            <input id="sothuc5" class="form-control w-25">
+          </div>
+          <br>
+          
+          <button onclick="tinhtongtrungbinh()" id="btntintien" class="btn btn-danger" >Tổng trung bình</button>
+          <div class="mt-2 alert alert-success">
+            kết quả : <span id="TongTrungBinh"></span>
+          </div>
+      </div>
+
+      <hr style="background: red;">
+
+<!-- quy đổi tiền -->
+      <div class="form-group container" >
+        <h3>Quy đổi tiền</h3>
+          <div class="form-group">
+            <p> USD</p>
+            <input id="usd" class="form-control w-25">
+          </div>
+          <br>
+          <div class="form-group">
+            <p>VND</p>
+            <input id="vnd" class="form-control w-25">
+          </div>
+          <br>
+          <button onclick="Quydoitien()" id="btntintien" class="btn btn-danger" >Tính Tiền</button>
+          <div class="mt-2 alert alert-success">
+            kết quả : <span id="quydoitien"></span>
+          </div>
+      </div>
+
+
+
+      <hr style="background: red;">
+<!-- tính chu vi -->
+      <div class="form-group container" >
+        <h3>Tính chu vi hình chữ nhật</h3>
+          <div class="form-group">
+            <p> chiều dài</p>
+            <input id="chieurongg" class="form-control w-25">
+          </div>
+          <br>
+          <div class="form-group">
+            <p>chiều rộng</p>
+            <input id="chieudaii" class="form-control w-25">
+          </div>
+          <br>
+          <button onclick="chuvi()" id="btntintien" class="btn btn-danger" >Tính Chu vi</button>
+          <div class="mt-2 alert alert-success">
+            kết quả : <span id="tinhchuvicn"></span>
+          </div>
+      </div>
+
+
+      <hr style="background: red;">
+<!-- tính diện tích -->
+      <div class="form-group container" >
+        <h3>Tính diện tích hình chữ nhật</h3>
+          <div class="form-group">
+            <p> chiều rộng</p>
+            <input id="chieurong" class="form-control w-25">
+          </div>
+          <br>
+          <div class="form-group">
+            <p>chiều dài</p>
+            <input id="chieudai" class="form-control w-25">
+          </div>
+          <br>
+          <button onclick="dientich()" id="btntintien" class="btn btn-danger" >Tính diện tích </button>
+          <div class="mt-2 alert alert-success">
+            kết quả : <span id="tinhdientichcn"></span>
+          </div>
+      </div>
+ 
+<!-- tính tổng 2 kí số -->
+
+      <hr style="background: red;">
+
+      <div class="form-group container" >
+        <h3>Tính Tổng 2 kí số</h3>
+          <div class="form-group">
+            <p> 2 kí số</p>
+            <input id="number" class="form-control w-25">
+          </div>
+          <br>
+          <div class="form-group">
+            <p>số hàng chục</p>
+            <input id="hangchuc" class="form-control w-25">
+          </div>
+          <br>
+          <div class="form-group">
+            <p>số hàng đơn vị</p>
+            <input id="donvi" class="form-control w-25">
+          </div>
+          <br>
+          <button onclick="tongkiso()" id="btntintien" class="btn btn-danger" >Tổng </button>
+          <div class="mt-2 alert alert-success">
+            kết quả : <span id="tongkiso"></span>
+          </div>
+      </div>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
